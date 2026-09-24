@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gcd-calculator
+    runtime: python
+    pythonVersion: "3.11"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PORT
+        value: 10000
